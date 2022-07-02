@@ -21,6 +21,8 @@ public class Shatter : MonoBehaviour
        yield return new WaitForSeconds(delay);
        Instantiate (destroyedVersion, transform.position, transform.rotation);
        Destroy (MyGreatObject);
+        //GetComponent<BoxCollider>().enabled = false;
+       //MyGreatObject.SetActive(false);
     }
 }
 
